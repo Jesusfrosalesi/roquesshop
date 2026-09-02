@@ -7,7 +7,7 @@
     <title>LosRoques.shop | Kitesurf</title>
     <meta
         name="description"
-        content="Equipos y accesorios de kitesurf en Los Roques. Aliados de KitePal.com."
+        content="Equipos y accesorios de kitesurf en Los Roques. Aliados de KitePal y Paradise Hotels."
     >
 
     <style>
@@ -96,7 +96,8 @@
         }
 
         .hero {
-            max-width: 900px;
+            width: 100%;
+            max-width: 1100px;
             padding: 70px 0 100px;
         }
 
@@ -138,7 +139,7 @@
 
         .description {
             margin-top: 34px;
-            max-width: 650px;
+            max-width: 700px;
             color: rgba(255,255,255,.72);
             font-size: clamp(18px, 2vw, 22px);
             line-height: 1.6;
@@ -189,10 +190,10 @@
 
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 15px;
             margin-top: 70px;
-            max-width: 850px;
+            max-width: 1100px;
         }
 
         .info-card {
@@ -215,12 +216,25 @@
             color: rgba(255,255,255,.55);
         }
 
+        .info-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #65fff0;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .info-card a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             width: min(1180px, 92%);
             margin: auto;
             padding: 30px 0;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             gap: 20px;
             border-top: 1px solid rgba(255,255,255,.08);
             color: rgba(255,255,255,.40);
@@ -236,8 +250,13 @@
             color: #65fff0;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
+        @media (max-width: 700px) {
             nav {
                 height: 75px;
             }
@@ -275,7 +294,6 @@
 </nav>
 
 <main>
-
     <section class="hero">
 
         <div class="tag">
@@ -296,7 +314,6 @@
         </p>
 
         <div class="actions">
-
             <a
                 href="https://kitepal.com"
                 target="_blank"
@@ -306,10 +323,14 @@
                 Conoce KitePal →
             </a>
 
-            <a href="#info" class="button button-secondary">
-                Conócenos
+            <a
+                href="https://paradisehoteles.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button-secondary"
+            >
+                Paradise Hotels
             </a>
-
         </div>
 
         <div class="info-grid" id="info">
@@ -331,32 +352,107 @@
             </div>
 
             <div class="info-card">
-                <strong>🤝 Aliados de KitePal</strong>
+                <strong>🤝 KitePal</strong>
                 <p>
-                    Trabajamos junto a KitePal para conectar riders,
+                    Aliados de KitePal para conectar riders,
                     experiencias y kitesurf.
                 </p>
+
+                <a
+                    href="https://kitepal.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    KitePal.com
+                </a>
+
+                <br>
+
+                <a
+                    href="https://www.instagram.com/kitepal/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram · @kitepal
+                </a>
+            </div>
+
+            <div class="info-card">
+                <strong>🏝 Paradise Hotels</strong>
+                <p>
+                    Aliados de Paradise Hotels para vivir Los Roques
+                    dentro y fuera del agua.
+                </p>
+
+                <a
+                    href="https://paradisehoteles.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ParadiseHoteles.com
+                </a>
+
+                <br>
+
+                <a
+                    href="https://www.instagram.com/paradisehotels/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram · @ParadiseHotels
+                </a>
+
+                <br>
+
+                <a
+                    href="https://www.instagram.com/paradisegranroque/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    @ParadiseGranRoque
+                </a>
+
+                <br>
+
+                <a
+                    href="https://www.instagram.com/losroquesparadise/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    @LosRoquesParadise
+                </a>
             </div>
 
         </div>
-
     </section>
-
 </main>
 
 <footer>
-
     <div>
         © 2026 LosRoques.shop
     </div>
 
     <div>
-        Aliados de
+        Partners ·
         <a href="https://kitepal.com" target="_blank" rel="noopener noreferrer">
-            KitePal.com
+            KitePal
+        </a>
+        ·
+        <a href="https://paradisehoteles.com" target="_blank" rel="noopener noreferrer">
+            Paradise Hotels
         </a>
     </div>
 
+    <div>
+        Instagram ·
+        <a href="https://www.instagram.com/kitepal/" target="_blank" rel="noopener noreferrer">
+            @kitepal
+        </a>
+        ·
+        <a href="https://www.instagram.com/paradisehotels/" target="_blank" rel="noopener noreferrer">
+            @ParadiseHotels
+        </a>
+    </div>
 </footer>
 
 </body>
