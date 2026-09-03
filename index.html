@@ -257,7 +257,6 @@
       object-position: center;
       transition: transform .8s ease;
     }
-
     .photo-frame:hover img { transform: scale(1.025); }
 
     .photo-label {
@@ -409,12 +408,23 @@
       border-top: 1px solid rgba(255,255,255,.08);
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 18px;
       flex-wrap: wrap;
       color: rgba(255,255,255,.42);
       font-size: 12px;
     }
     footer a { color: rgba(255,255,255,.68); text-decoration: none; }
+    .visit-counter {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 5px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.035);
+    }
+    .visit-counter img { height: 20px; width: auto; border-radius: 4px; }
 
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; padding-top: 54px; }
@@ -609,6 +619,9 @@
     <a href="https://paradisehoteles.com/es/roques" target="_blank" rel="noopener noreferrer">Paradise Hotels</a>
   </div>
   <div><a href="https://wa.me/584122902000" target="_blank" rel="noopener noreferrer">WhatsApp 0412 2902000</a></div>
+  <div class="visit-counter" title="Visitas a LosRoques.shop">
+    <img src="https://api.visitorbadge.io/api/VisitorHit?user=Jesusfrosalesi&repo=roquesshop&label=VISITAS&labelColor=%23082d40&countColor=%2365f1dd" alt="Contador de visitas de LosRoques.shop" loading="lazy">
+  </div>
 </footer>
 
 </body>
